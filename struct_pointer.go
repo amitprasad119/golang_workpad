@@ -45,7 +45,7 @@ func (p person) print() {
 }
 
 func (personPtr *person) updateNameByPtr(name string) {
-	(*personPtr).name = name
+	(*personPtr).name = name // access the ptr with * i.e (*ptr).property
 }
 
 func (personPtr *person) printByPtr() {
