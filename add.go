@@ -9,6 +9,20 @@ func main() {
 	b := getNumberB()
     fmt.Println(a+b)
 	fmt.Println(addTwo(10,5))
+   
+	var (
+		num1 int 
+		num2 int
+	)
+	fmt.Println("Enter num1")
+    fmt.Scanf("%d",&num1)
+	fmt.Println("Enter num2")
+    fmt.Scanf("%d",&num2)
+	
+	output := num1 - num2 
+
+	fmt.Println("result:",output)
+
 }
 
 func getNumberA() int {
