@@ -40,4 +40,10 @@ func main() {
 	miltonValue := address["milton"]
 	fmt.Println(miltonValue)
 
+	// iterate over maps 
+
+	 for key,value := range address {
+		 fmt.Println("key",key , "value:",value)
+	 }
+
 }
