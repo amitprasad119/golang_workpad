@@ -7,6 +7,8 @@ import "fmt"
 */
 func main() {
 	x := 0
+	y = &x // means we are assigning the address of the x variable to y
+	fmt.Println(*y) // means we are fetching the value from the addess of x since y holds the addess of x and has type as *int
     passByValue(x)
 	fmt.Println("Pass by values")
 	fmt.Println(x);
