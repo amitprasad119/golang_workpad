@@ -11,8 +11,11 @@ type inputData struct {
 }
 
 func TestSubtract(t *testing.T) {
-	inputs := []inputData{inputData{20, 10, 10},
-		inputData{50, 60, -10}, {70, 40, 30}}
+	inputs := []inputData{
+		inputData{20, 10, 10},
+		inputData{50, 60, -10},
+		inputData{70, 40, 30}}
+
 	for _, v := range inputs {
 		finalResult := subTwo(v.num1, v.num2)
 		if finalResult != v.result {
